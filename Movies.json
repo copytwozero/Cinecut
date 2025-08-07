@@ -1,0 +1,25 @@
+[
+  { "title": "Leo", "link": "leo.html" },
+  { "title": "Vikram", "link": "vikram.html" },
+  { "title": "Jailer", "link": "jailer.html" },
+  { "title": "Master", "link": "master.html" },
+  { "title": "Beast", "link": "beast.html" },
+  { "title": "RRR", "link": "rrr.html" }
+]
+
+  
+  const url = "Tamil Movies.html";
+  if (window.location.hostname === "yourdomain.com") {
+    window.location.href = url;
+  } else {
+    alert("This link only works on the correct domain.");
+  }
+
+  // current domain name
+  const domain = window.location.origin;
+
+  // known file name
+  const page = "/Tamil Movies.html"; // or just "Tamil Movies.html" if in same folder
+
+  // redirect or use as href
+  window.location.href = domain + page;
