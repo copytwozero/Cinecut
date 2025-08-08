@@ -113,7 +113,8 @@
         </div>
       `;
 
-      fetch(`https://corsproxy.io/?https://isaidub.city${url}`)
+      fetch(`https://corsproxy.io/?https://isaidub.cityhttps://isaidub.tube/tamil-yearly-dubbed-movies/
+${url}`)
         .then((res) => res.text())
         .then((html) => {
           const doc = new DOMParser().parseFromString(html, "text/html");
@@ -210,9 +211,14 @@
         window.location.href = finalDownloadURL;
       }, 5000);
     }
-
-    // Load default page (first category)
+    // ORIGINAL
     loadPage("https://isaidub.tube/tamil-yearly-dubbed-movies/");
+
+    // ✅ FIXED
+    loadPage("/tamil-yearly-dubbed-movies/");
+
+
+  
   </script>
 
 </body>
